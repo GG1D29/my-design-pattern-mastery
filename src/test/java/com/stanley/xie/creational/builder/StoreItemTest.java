@@ -9,18 +9,19 @@ class StoreItemTest {
 
     @Test
     void testStoreItem() {
-        StoreItem storeItem = new StoreItem("name", 1.20, "shortDesc", "desc",
-                11, "boxes");
+        var storeItem = new StoreItem(
+                "Soup", 1.5, null,
+                "A meal that you can warm up at home. It can come in different flavours including tomato, chicken, and vegetable",
+                null, "Can");
 
-        assertThat(storeItem.getName()).isEqualTo("name");
-        assertThat(storeItem.getPackagingType()).isEqualTo("boxes");
-        assertThat(storeItem.getPrice()).isEqualTo(1.20);
+        assertThat(storeItem.getName()).isEqualTo("Soup");
+        assertThat(storeItem.getPackagingType()).isEqualTo("Can");
+        assertThat(storeItem.getPrice()).isEqualTo(1.5);
     }
 
     @Test
     void testStoreItem_When_MissingMandatoryFields() {
-
-        assertThrows(IllegalArgumentException.class, () -> new StoreItem(null, null, "shortDesc", "desc",
-                11, "boxes"));
+        assertThrows(IllegalArgumentException.class, () -> new StoreItem(
+                null, null, "A tasty snack", null, 7, null));
     }
 }
