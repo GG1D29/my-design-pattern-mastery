@@ -1,8 +1,6 @@
 package com.stanley.xie.creational.builder;
 
-public class StoreItem
-
-{
+public class StoreItem {
     private final String name;
     private final Double price;
     private final String shortDescription;
@@ -34,4 +32,6 @@ public class StoreItem
                 ", packagingType='" + packagingType + '\'' +
                 '}';
     }
+
+
 }
