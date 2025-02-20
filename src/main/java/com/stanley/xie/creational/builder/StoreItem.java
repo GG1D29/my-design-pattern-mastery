@@ -1,5 +1,8 @@
 package com.stanley.xie.creational.builder;
 
+import lombok.Getter;
+
+@Getter
 public class StoreItem {
     private final String name;
     private final Double price;
