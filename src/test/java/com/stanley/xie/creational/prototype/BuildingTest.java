@@ -3,7 +3,6 @@ package com.stanley.xie.creational.prototype;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class BuildingTest {
 
@@ -11,10 +10,10 @@ class BuildingTest {
     void getBuildingType() {
         BuildingType houseBuildingType = new BuildingType("House");
         Building house1 = new Building(21, houseBuildingType);
-        Building house2 = new Building(21, houseBuildingType);
-        Building house3 = new Building(21, houseBuildingType);
-        Building house4 = new Building(21, houseBuildingType);
-        Building house5 = new Building(21, houseBuildingType);
+        Building house2 = house1.clone();
+        Building house3 = house1.clone();
+        Building house4 = house1.clone();
+        Building house5 = house1.clone();
 
         // To handle mutability, only first house will change type.
 //        houseBuildingType.setType("House with yard");
