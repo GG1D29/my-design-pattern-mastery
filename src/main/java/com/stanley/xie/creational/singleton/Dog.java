@@ -2,9 +2,8 @@ package com.stanley.xie.creational.singleton;
 
 public class Dog {
 
-    private final Logger logger = new Logger();
-
     public void woof() {
+        var logger = Logger.getInstance();
         logger.log("Woof");
     }
 

@@ -2,9 +2,8 @@ package com.stanley.xie.creational.singleton;
 
 public class Cat {
 
-    private final Logger logger = new Logger();
-
     public void meow() {
+        var logger = Logger.getInstance();
         logger.log("Meow");
     }
 

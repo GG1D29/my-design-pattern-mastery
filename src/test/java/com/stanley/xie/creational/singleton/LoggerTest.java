@@ -2,12 +2,17 @@ package com.stanley.xie.creational.singleton;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class LoggerTest {
 
     @Test
     void logAnimalSound() {
+        /* Output before implement Singleton Pattern:
+        Logger created, is it?
+        Woof
+        Logger created, is it?
+        Meow
+         */
+
         var dog = new Dog();
         dog.woof();
 

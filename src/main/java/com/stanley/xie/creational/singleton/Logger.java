@@ -1,9 +1,14 @@
 package com.stanley.xie.creational.singleton;
 
-public class Logger {
+public enum Logger {
+    INSTANCE;
 
-    public Logger() {
-        System.out.println("Logger created, is it?");
+    Logger() {
+        System.out.println("Logger created once, is it?");
+    }
+
+    public static Logger getInstance() {
+        return INSTANCE;
     }
 
     void log(String logMessage) {
