@@ -16,10 +16,10 @@ class BuildingTest {
         Building house5 = house1.clone();
 
         // To handle mutability, only first house will change type.
-//        houseBuildingType.setType("House with yard");
+        houseBuildingType.setType("House with yard");
 
         assertThat(house1.getHeightInPixels()).isEqualTo(21);
-        assertThat(house1.getBuildingType().getType()).isEqualTo("House");
+        assertThat(house1.getBuildingType().getType()).isEqualTo("House with yard");
 
         assertThat(house2.getHeightInPixels()).isEqualTo(21);
         assertThat(house2.getBuildingType().getType()).isEqualTo("House");
