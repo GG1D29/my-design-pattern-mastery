@@ -54,9 +54,16 @@
 - Implement the `clone()` method in the child class.
 - Use deep cloning to ensure that each cloned object has its own separate instances of _mutable fields_.
 
+
+### C4. Factory Pattern
+- A class whose sole purpose is to handle creation of another class
+- This class does not know in advance what the concrete type of that class should be.
+- A nice side effect of this pattern is that the creation of the object is encapsulated in one place so if it changes the call to new is only in that one place and only need to be changed there.
+
+
 ---
 
 
-_This repo is inspired by the Exercise/Challenges on LinkedIn Learning Course:_
+This repo is inspired by the Challenges on LinkedIn Learning Course called: 
 
-https://www.linkedin.com/learning/complete-guide-to-java-design-patterns-creational-behavioral-and-structural/improve-your-code-with-design-patterns
+[Complete Guide to Java Design Patterns: Creational, Behavioral, and Structural](https://www.linkedin.com/learning/complete-guide-to-java-design-patterns-creational-behavioral-and-structural/)
