@@ -9,31 +9,27 @@ class UserInterfaceTest {
 
     @Test
     void getBlueUserInterface() {
-        UserInterfaceApp app = new UserInterfaceApp();
-        UserInterface actual = app.createUserInterface("BLUE");
+        UserInterface actual = createUserInterface("BLUE");
 
-        Button actualButton = actual.getButton();
-        assertThat(actualButton.getColor()).isEqualTo("BLUE");
-
-        ScrollBar actualScrollBar = actual.getScrollBar();
-        assertThat(actualScrollBar.getColor()).isEqualTo("BLUE");
+        assertThat(actual.getButton().getColor()).isEqualTo("BLUE");
+        assertThat(actual.getScrollBar().getColor()).isEqualTo("BLUE");
     }
 
     @Test
     void getRedUserInterface() {
-        UserInterfaceApp app = new UserInterfaceApp();
-        UserInterface actual = app.createUserInterface("RED");
+        UserInterface actual = createUserInterface("RED");
 
-        Button actualButton = actual.getButton();
-        assertThat(actualButton.getColor()).isEqualTo("RED");
-
-        ScrollBar actualScrollBar = actual.getScrollBar();
-        assertThat(actualScrollBar.getColor()).isEqualTo("RED");
+        assertThat(actual.getButton().getColor()).isEqualTo("RED");
+        assertThat(actual.getScrollBar().getColor()).isEqualTo("RED");
     }
 
     @Test
     void getGreenUserInterface() {
-        UserInterfaceApp app = new UserInterfaceApp();
-        assertThrows(IllegalArgumentException.class, () -> app.createUserInterface("GREEN"));
+        assertThrows(IllegalArgumentException.class, () -> createUserInterface("GREEN"));
+    }
+
+    private UserInterface createUserInterface(String color) {
+        var userInterfaceFactory = FactoryMaker.createFactory(color);
+        return new UserInterface(userInterfaceFactory.createButton(), userInterfaceFactory.createScrollBar());
     }
 }

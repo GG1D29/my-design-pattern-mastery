@@ -17,11 +17,5 @@ public class UserInterface {
     public ScrollBar getScrollBar() {
         return scrollBar;
     }
-    @Override
-    public String toString() {
-        return "UserInterface{" +
-                "button=" + button.getColor() +
-                ", scrollBar=" + scrollBar.getColor() +
-                '}';
-    }
+
 }
