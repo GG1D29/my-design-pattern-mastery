@@ -16,14 +16,14 @@ public class UserInterfaceApp {
 
 
     public UserInterface createUserInterface(String color) {
-        if (color.equalsIgnoreCase("RED")) {
-            return new UserInterface(new RedButton(), new RedScrollBar());
-        } else if (color.equalsIgnoreCase("BLUE")) {
-            return new UserInterface(new BlueButton(), new BlueScrollBar());
-        } else {
-            throw new IllegalArgumentException("Color not supported");
-        }
-
+        UserInterfaceFactory factory = FactoryMaker.createFactory(color);
+        return new UserInterface(factory.createButton(), factory.createScrollBar());
+//        if (color.equalsIgnoreCase("RED")) {
+//
+//        } else if (color.equalsIgnoreCase("BLUE")) {
+//            return new UserInterface(new BlueButton(), new BlueScrollBar());
+//        } else {
+//            throw new IllegalArgumentException("Color not supported");
     }
 
 }
