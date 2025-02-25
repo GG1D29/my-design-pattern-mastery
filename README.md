@@ -4,6 +4,8 @@
 1. [Builder](#C1-Builder-Pattern)
 2. [Singleton](#C2-Singleton-Pattern)
 3. [Prototype](#C3-Prototype-Pattern)
+4. [Factory](#C4-Factory-Pattern)
+5. [Abstract Factory](#C5-Abstract-Factory-Pattern)
 
 ## Behavioral
 
@@ -54,12 +56,18 @@
 - Implement the `clone()` method in the child class.
 - Use deep cloning to ensure that each cloned object has its own separate instances of _mutable fields_.
 
-
 ### C4. Factory Pattern
 - A class whose sole purpose is to handle creation of another class
 - This class does not know in advance what the concrete type of that class should be.
 - A nice side effect of this pattern is that the creation of the object is encapsulated in one place so if it changes the call to new is only in that one place and only need to be changed there.
 
+### C5. Abstract Factory Pattern
+- Handles groups of related classes e.q User Interface (buttons, toolbar, scroll bar)
+- The system should be independent of how objects are created
+- It should be configured with one of the multiple families of objects
+- The family of related objects should be used together.
+- Complex class hierarchy
+- Concrete classes are hidden from the client
 
 ---
 
