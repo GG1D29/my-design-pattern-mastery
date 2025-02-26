@@ -26,9 +26,10 @@
         // Set each field here.
     }
 ```
+---
 
 ### C2. Singleton Pattern
-- There is one static/class variable called `INSTANCE`
+- There is one static/class variable named `INSTANCE`
 - Set the class constructor to private
 - Provide public static method `getInstance()`
 ```java
@@ -46,6 +47,8 @@
 - Enums guarantee that only one instance of the object exists.
 - The methods inside the class _still need_ to handle the thread safety properly.
 
+---
+
 ### C3. Prototype Pattern
 - The main objective of this pattern is to eliminate code duplication when creating new instances with same parameters.
 - Using the copy constructor technique
@@ -56,10 +59,14 @@
 - Implement the `clone()` method in the child class.
 - Use deep cloning to ensure that each cloned object has its own separate instances of _mutable fields_.
 
+---
+
 ### C4. Factory Pattern
 - A class whose sole purpose is to handle creation of another class
 - This class does not know in advance what the concrete type of that class should be.
 - A nice side effect of this pattern is that the creation of the object is encapsulated in one place so if it changes the call to new is only in that one place and only need to be changed there.
+
+---
 
 ### C5. Abstract Factory Pattern
 - Handles groups of related classes e.q User Interface (buttons, toolbar, scroll bar)
