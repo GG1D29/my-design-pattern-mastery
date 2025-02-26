@@ -10,6 +10,8 @@
 ## Behavioral
 
 ## Structural
+0. [Definition](#S0-Structural-Design-Pattern)
+1. [Adapter](#S1-Adapter-Pattern)
 
 ### C1. Builder Pattern
 - Avoid passing a lot of params to the constructor
@@ -77,6 +79,23 @@
 - Concrete classes are hidden from the client
 
 ---
+
+### S0. Structural Design Pattern
+- How classes and objects are put together to form larger structure.
+- The more larger objects/classes the more complex it becomes to handle, that's where these Design patterns come in.
+- Two main of focus in Structural Design pattern: `Class Patterns`, and `Object Patterns`.
+- _Structural Class Patterns_ are concerned with the "is a" relationship. → `Inheritance`
+- _Structural Object Patterns_ are concerned with the "has a" relationship. → `Composition`
+
+### S1. Adapter Pattern
+- Allows classes to work together when they normally wouldn't be able to. (Imagine the US vs EU socket plug)
+- This pattern is typically used when working with existing/legacy code.
+- There are two versions: Object adapter and Class adapter pattern (Object version is more common in Java) 
+- The Class Version relies on multiple inheritance → in Java this can be achieved through the use of Interfaces
+- If we want to override the behavior of the Adaptee class, it might be better to use the Class Adapter pattern.
+- The drawback of Class Adapter pattern is the Adapter can only work with the specific type of Adaptee (the extended class) 
+---
+
 
 
 This repo is inspired by the Challenges on LinkedIn Learning Course called: 
