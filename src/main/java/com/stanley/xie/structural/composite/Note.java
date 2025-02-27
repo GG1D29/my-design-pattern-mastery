@@ -1,6 +1,6 @@
 package com.stanley.xie.structural.composite;
 
-public class Note {
+public class Note implements Playable {
 
     private final char value;
 
@@ -8,6 +8,7 @@ public class Note {
         this.value = value;
     }
 
+    @Override
     public void play() {
         System.out.println(value);
     }
