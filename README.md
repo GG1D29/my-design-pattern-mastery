@@ -13,6 +13,7 @@
 0. [Definition](#S0-Structural-Design-Pattern)
 1. [Adapter](#S1-Adapter-Pattern)
 2. [Bridge](#S2-Bridge-Pattern)
+3. [Composite](#S3-Composite-Pattern)
 
 ### C1. Builder Pattern
 - Avoid passing a lot of params to the constructor
@@ -104,6 +105,14 @@
 - Use this pattern to maintain flexibility in a Class Hierarchy.
 - To avoid having created multiple class in the hierarchy.
 - How to achieve: Use composition to pass in the configuration to the different classes.
+
+---
+
+### S3. Composite Pattern
+- Allow us to treat objects and groups of object in the same way e.q Checklist and To-do item list.
+- The client using the composite can ignore the differences between the composite and its parts. (because it is implementing same interface)
+
+---
 
 This repo is inspired by the Challenges on LinkedIn Learning Course called: 
 
