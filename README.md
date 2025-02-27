@@ -15,6 +15,7 @@
 2. [Bridge](#S2-Bridge-Pattern)
 3. [Composite](#S3-Composite-Pattern)
 4. [Decorator](#S4-Decorator-Pattern)
+5. [Facade](#S5-Facade-Pattern)
 
 ### C1. Builder Pattern
 - Avoid passing a lot of params to the constructor
@@ -120,6 +121,11 @@
 - How to achieve: Create a Decorator class that implements the same interface as the main class.
 
 ---
+
+### S5. Facade Pattern
+- Provides unified interface to a set of interfaces in the subsystem.
+- Provides a simple interface for a complex subsystem. 
+- Encapsulates all access to a subsystem.
 
 This repo is inspired by the Challenges on LinkedIn Learning Course called: 
 
