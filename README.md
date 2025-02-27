@@ -14,6 +14,7 @@
 1. [Adapter](#S1-Adapter-Pattern)
 2. [Bridge](#S2-Bridge-Pattern)
 3. [Composite](#S3-Composite-Pattern)
+4. [Decorator](#S4-Decorator-Pattern)
 
 ### C1. Builder Pattern
 - Avoid passing a lot of params to the constructor
@@ -111,6 +112,12 @@
 ### S3. Composite Pattern
 - Allow us to treat objects and groups of object in the same way e.q Checklist and To-do item list.
 - The client using the composite can ignore the differences between the composite and its parts. (because it is implementing same interface)
+
+---
+
+### S4. Decorator Pattern
+- Change behavior of an object without creating a new subclass for that behavior.
+- How to achieve: Create a Decorator class that implements the same interface as the main class.
 
 ---
 
