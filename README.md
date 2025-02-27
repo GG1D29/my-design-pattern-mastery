@@ -12,6 +12,7 @@
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
 1. [Adapter](#S1-Adapter-Pattern)
+2. [Bridge](#S2-Bridge-Pattern)
 
 ### C1. Builder Pattern
 - Avoid passing a lot of params to the constructor
@@ -96,7 +97,13 @@
 - The drawback of Class Adapter pattern is the Adapter can only work with the specific type of Adaptee (the extended class) 
 ---
 
-
+### S2. Bridge Pattern
+- Official definition: Decouple an abstraction from its implementation so that the two can vary independently.
+- It means separate the part of our system that represents abstraction from the part that implements it, so that one can vary without affecting the other.
+- Use Composition instead of Inheritance, e.q `Shape` has a `Color`
+- Use this pattern to maintain flexibility in a Class Hierarchy.
+- To avoid having created multiple class in the hierarchy.
+- How to achieve: Use composition to pass in the configuration to the different classes.
 
 This repo is inspired by the Challenges on LinkedIn Learning Course called: 
 
