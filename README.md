@@ -10,6 +10,7 @@
 
 ## Behavioral
 0. [Definition](#B0-Behavioral-Design-Pattern)
+1. [Chain of Responsibility](#B1-Chain-of-Responsibility)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -99,6 +100,12 @@
 - Class behavioral pattern use `inheritance` to share behavior between different classes.
 - Object behavioral pattern looks at how objects can work together to get things done.
 - Some object pattern focus on encapsulating behavior in a single object and delegating requests to it.
+
+---
+
+### B1. Chain of Responsibility
+- Decouple the sender of a request from the receiver of the request.
+- Create a successor chain that for chaining together the next class that will handle the request.
 
 ---
 
