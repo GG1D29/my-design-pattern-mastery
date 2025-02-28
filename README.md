@@ -1,6 +1,7 @@
 # GoF Design Patterns
 
 ## Creational 
+0. [Definition](#C0-Creational-Design-Pattern)
 1. [Builder](#C1-Builder-Pattern)
 2. [Singleton](#C2-Singleton-Pattern)
 3. [Prototype](#C3-Prototype-Pattern)
@@ -8,6 +9,7 @@
 5. [Abstract Factory](#C5-Abstract-Factory-Pattern)
 
 ## Behavioral
+0. [Definition](#B0-Behavioral-Design-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -17,6 +19,11 @@
 4. [Decorator](#S4-Decorator-Pattern)
 5. [Facade](#S5-Facade-Pattern)
 6. [Proxy](#S6-Proxy-Pattern)
+
+### C0. Creational Design Pattern
+- Set of design patterns to help manage the complexity of creating an object.
+- Encapsulate the knowledge about which concrete class should be used.
+- Conceal how objects are created and put together.
 
 ### C1. Builder Pattern
 - Avoid passing a lot of params to the constructor
@@ -82,6 +89,16 @@
 - The family of related objects should be used together.
 - Complex class hierarchy
 - Concrete classes are hidden from the client
+
+---
+
+### B0. Behavioral Design Pattern
+- The design pattern that focus on how objects assign responsibilities between each other.
+- Concern with how objects are connected, communicate with each other.
+- Some focus on Class and some focus on Object.
+- Class behavioral pattern use `inheritance` to share behavior between different classes.
+- Object behavioral pattern looks at how objects can work together to get things done.
+- Some object pattern focus on encapsulating behavior in a single object and delegating requests to it.
 
 ---
 
