@@ -16,6 +16,7 @@
 3. [Composite](#S3-Composite-Pattern)
 4. [Decorator](#S4-Decorator-Pattern)
 5. [Facade](#S5-Facade-Pattern)
+6. [Proxy](#S6-Proxy-Pattern)
 
 ### C1. Builder Pattern
 - Avoid passing a lot of params to the constructor
@@ -126,6 +127,13 @@
 - Provides unified interface to a set of interfaces in the subsystem.
 - Provides a simple interface for a complex subsystem. 
 - Encapsulates all access to a subsystem.
+
+---
+
+### S6. Proxy Pattern
+- Proxy is a class that controls access to the functionality of another class.
+- Proxy use cases: Create expensive objects on demand, Control access to an object
+---
 
 This repo is inspired by the Challenges on LinkedIn Learning Course called: 
 
