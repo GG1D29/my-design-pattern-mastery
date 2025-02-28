@@ -11,6 +11,7 @@
 ## Behavioral
 0. [Definition](#B0-Behavioral-Design-Pattern)
 1. [Chain of Responsibility](#B1-Chain-of-Responsibility)
+2. [Command](#B2-Command-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -107,6 +108,12 @@
 - Decouple the sender of a request from the receiver of the request.
 - Create a successor chain that for chaining together the next class that will handle the request.
 
+
+### B2. Command Pattern
+- It's a way of making requests when you don't know anything about what exactly is being requested
+- The request is encapsulated inside _an object_
+- Useful for commands that you might want to perform later.
+- 
 ---
 
 ### S0. Structural Design Pattern
