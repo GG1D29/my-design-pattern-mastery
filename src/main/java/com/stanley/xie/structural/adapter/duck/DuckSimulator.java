@@ -5,12 +5,12 @@ public class DuckSimulator {
         Duck duck = new MallardDuck();
         testDuck(duck);
 
+        System.out.println();
+
         //Challenge:
         Turkey turkey = new WildTurkey();
-        turkey.gobble();
-        turkey.fly();
-
-        //testDuck(turkey); will failed to compile
+        Duck turkeyAdapter = new TurkeyAdapter(turkey);
+        testDuck(turkeyAdapter);
     }
 
     static void testDuck(Duck duck) {
