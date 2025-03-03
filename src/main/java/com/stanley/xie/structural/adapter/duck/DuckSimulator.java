@@ -11,6 +11,12 @@ public class DuckSimulator {
         Turkey turkey = new WildTurkey();
         Duck turkeyAdapter = new TurkeyAdapter(turkey);
         testDuck(turkeyAdapter);
+
+        System.out.println();
+
+        //Challenge:
+        Drone drone = new SuperDrone();
+        //testDuck(drone);
     }
 
     static void testDuck(Duck duck) {
