@@ -16,7 +16,8 @@ public class DuckSimulator {
 
         //Challenge:
         Drone drone = new SuperDrone();
-        //testDuck(drone);
+        Duck droneAdapter = new DroneAdapter(drone);
+        testDuck(droneAdapter);
     }
 
     static void testDuck(Duck duck) {
