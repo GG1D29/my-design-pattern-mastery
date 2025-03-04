@@ -13,6 +13,7 @@
 1. [Chain of Responsibility](#B1-Chain-of-Responsibility)
 2. [Command](#B2-Command-Pattern)
 3. [Iterator](#B3-Iterator-Pattern)
+4. [Mediator](#B4-Mediator-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -120,6 +121,10 @@
 - Design Principle → Encapsulate what varies.
 - The iterator pattern helps us encapsulate the iteration.
 - For example: Iterator interface in Java Collection allows data to be accessed, removed, or stored in a collection.
+
+### B4. Mediator Pattern
+- An object that encapsulates how a set of objects interact. 
+- Mediator promotes loose coupling by keeping objects from referring to each other explicitly
 
 ---
 
