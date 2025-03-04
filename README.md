@@ -12,6 +12,7 @@
 0. [Definition](#B0-Behavioral-Design-Pattern)
 1. [Chain of Responsibility](#B1-Chain-of-Responsibility)
 2. [Command](#B2-Command-Pattern)
+3. [Iterator](#B3-Iterator-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -113,7 +114,10 @@
 - It's a way of making requests when you don't know anything about what exactly is being requested
 - The request is encapsulated inside _an object_
 - Useful for commands that you might want to perform later.
-- 
+
+### B3. Iterator Pattern
+- This pattern provides a way to access the elements of an aggregate object(Collection) sequentially without exposing its underlying representation.
+
 ---
 
 ### S0. Structural Design Pattern
