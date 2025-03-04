@@ -117,6 +117,9 @@
 
 ### B3. Iterator Pattern
 - This pattern provides a way to access the elements of an aggregate object(Collection) sequentially without exposing its underlying representation.
+- Design Principle → Encapsulate what varies.
+- The iterator pattern helps us encapsulate the iteration.
+- For example: Iterator interface in Java Collection allows data to be accessed, removed, or stored in a collection.
 
 ---
 
