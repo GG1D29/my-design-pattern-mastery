@@ -11,22 +11,16 @@ public class TrafficLight {
 
     private Color color = Color.RED;
 
-    public void changeToRed(PedestrianCrossingLight pedestrianCrossingLight) {
+    public void changeToRed() {
         color = Color.RED;
-        System.out.println("Traffic light is red");
-        pedestrianCrossingLight.changeToGreen();
     }
 
     public void changeToAmber() {
         color = Color.AMBER;
-        System.out.println("Traffic light is amber");
     }
 
-    public void changeToGreen(PedestrianCrossingLight pedestrianCrossingLight) {
-        pedestrianCrossingLight.changeToRed();
+    public void changeToGreen() {
         color = Color.GREEN;
-        System.out.println("Traffic light is green");
-
     }
 
 }
