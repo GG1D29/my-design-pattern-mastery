@@ -1,5 +1,10 @@
 package com.stanley.xie.behavioral.memento;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Item {
 
     private int price;
@@ -8,14 +13,6 @@ public class Item {
     public Item(int price) {
         this.price = price;
         this.state = new ItemState(price);
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public int getPrice() {
-        return price;
     }
 
     public void save() {
