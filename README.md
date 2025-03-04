@@ -15,6 +15,7 @@
 3. [Iterator](#B3-Iterator-Pattern)
 4. [Mediator](#B4-Mediator-Pattern)
 5. [Memento](#B5-Memento-Pattern)
+6. [Observer](#B6-Observer-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -131,6 +132,11 @@
 - Definition: Capture and externalize object's internal state so that the object can be restored to this state later, without breaking the principle of encapsulation.
 - Similar to Undo or Ctrl+Z command
 - Tips: Use deep copy technique to copy the content of previous state to avoid restoring the old reference of the object
+
+### B6. Observer Pattern
+- Define one to many dependency among objects so that when one object changes state, all its dependencies will be notified and updated accordingly.
+- One implementation is called the Publish-Subscribe
+- We can make the use of the PropertyChangeListener and PropertyChangeSupport classes which are the part of the JDK.
 
 ---
 
