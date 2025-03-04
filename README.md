@@ -14,6 +14,7 @@
 2. [Command](#B2-Command-Pattern)
 3. [Iterator](#B3-Iterator-Pattern)
 4. [Mediator](#B4-Mediator-Pattern)
+5. [Memento](#B5-Memento-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -125,6 +126,11 @@
 ### B4. Mediator Pattern
 - An object that encapsulates how a set of objects interact. 
 - Mediator promotes loose coupling by keeping objects from referring to each other explicitly
+
+### B5. Memento Pattern
+- Definition: Capture and externalize object's internal state so that the object can be restored to this state later, without breaking the principle of encapsulation.
+- Similar to Undo or Ctrl+Z command
+- Tips: Use deep copy technique to copy the content of previous state to avoid restoring the old reference of the object
 
 ---
 
