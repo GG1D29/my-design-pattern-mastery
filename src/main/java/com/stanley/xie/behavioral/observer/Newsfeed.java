@@ -5,7 +5,7 @@ import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 
-// The Observer.
+// This is the Observer.
 public class Newsfeed implements PropertyChangeListener {
 
     private List<String> statuses = new ArrayList<>();

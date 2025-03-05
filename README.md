@@ -137,7 +137,58 @@
 - Define one to many dependency among objects so that when one object changes state, all its dependencies will be notified and updated accordingly.
 - One implementation is called the Publish-Subscribe
 - We can make the use of the PropertyChangeListener and PropertyChangeSupport classes which are the part of the JDK.
+- Observable is also called the `Subject`(the one), in this example the User class.
+- Meanwhile, the Observers are also called the `Dependent` or Subscriber(the many), in this case the Newsfeed class.
 
+### Useful Tips or Implementation Steps:
+- First step:
+- Implement `PropertyChangeListener` to the `Observer` class(Newsfeed)
+- Override the `propertyChanged(ProperyChangeEvent evt)` method from the interface -> this method will receive event from the Subject(user)
+```java
+public class Newsfeed implements PropertyChangeListener {
+    //...
+
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        statuses.add((String)evt.getNewValue());        
+    }
+}
+```
+- Second step:
+- Add `PropertyChangeSupport` field to the `Observable` class -> this variable will notify the Observers when a property in this class changes.
+- Call the method `firePropertyChange(propName, oldValue, newValue)` to notify the changes to the Observer
+- Add the method to `addPropertyChangeListener(NewsFeed)`
+```java
+import java.beans.PropertyChangeSupport;
+
+public class User {
+    private String status;
+    private PropertyChangeSupport support = new PropertyChangeSupport(this);
+
+    public void setStatus(String status) {
+        support.firePropertyChange("status", "oldValue", "newValue");
+        this.status = status;
+    }
+
+    // To put it all together: this method must be called by the Driver class/method.
+    public void addPropertyChangeListener(Newsfeed newsfeed) {
+        support.addPropertyChangeListener(newsfeed);
+    }
+}
+```
+- If `oldValue` and `newValue` are the same, this method will not do anything.
+- Finally, add the method in the Driver class/method to addPropertyChangeListener()
+```java
+public static void main(String[] args) {
+    //...
+    user1.addPropertyChangeListener(newsfeed);
+    user1.addPropertyChangeListener(newsfeed);
+    
+    user1.setStatus("...");
+    user2.setStatus("...");
+    //...
+}
+```
 ---
 
 ### S0. Structural Design Pattern

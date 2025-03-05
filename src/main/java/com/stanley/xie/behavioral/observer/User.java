@@ -1,9 +1,8 @@
 package com.stanley.xie.behavioral.observer;
 
-import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-// The Observable.
+// This is the Observable.
 public class User {
 
     private String status;
