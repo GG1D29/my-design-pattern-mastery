@@ -134,11 +134,17 @@
 - Tips: Use deep copy technique to copy the content of previous state to avoid restoring the old reference of the object
 
 ### B6. Observer Pattern
-- Define one to many dependency among objects so that when one object changes state, all its dependencies will be notified and updated accordingly.
-- One implementation is called the Publish-Subscribe
-- We can make the use of the PropertyChangeListener and PropertyChangeSupport classes which are the part of the JDK.
+- Define one to many dependency among objects so that when one object changes state, all its dependencies will be notified and updated automatically.
+- This pattern strive for _loosely coupling_ design principle.
+- Loosely coupled objects means when they _interact with each other,_ but they have **little knowledge** of each other.
+- With loose coupling, objects don't become too dependent on each other.
+- Subjects and observers are loosely coupled.
+- Subject knows only that the observer implements a specific interface, it doesn't need to know the concrete class of the observers
+- One = Subject, Many = Dependents (or Observers)
 - Observable is also called the `Subject`(the one), in this example the User class.
 - Meanwhile, the Observers are also called the `Dependent` or Subscriber(the many), in this case the Newsfeed class.
+- Think about Publishers vs Subscribers. Publishers post messages to a message broker, and subscribers register subscriptions to the message broker.
+- One way to implement the Observer pattern is to use the `PropertyChangeListener` and `PropertyChangeSupport` classes which are the part of the JDK.
 
 ### Useful Tips or Implementation Steps:
 - First step:
