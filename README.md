@@ -18,6 +18,7 @@
 6. [Observer](#B6-Observer-Pattern)
 7. [State](#B7-State-Pattern)
 8. [Strategy](#B8-Strategy-Pattern)
+9. [Template](#B9-Template-Method-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -212,6 +213,11 @@ public static void main(String[] args) {
 - Another design principle: Favor composition over inheritance. (if you have a choice)
 - Composition: When you put two classes together with composition, an object can delegate the behavior to the composed object.
 - Composition results in a more flexible design. 
+
+### B9. Template Method Pattern
+- Defining the common steps of an algorithm in superclass and redefining some of those steps in subclass.
+- Challenge: it might not immediately obvious which parts are meant to be changed, it can also quite difficult to follow the flow of the program.
+- Useful when you want to implement the common parts of an algorithm once, or when you find you have classes that duplicate same code. 
 
 ---
 
