@@ -17,6 +17,7 @@
 5. [Memento](#B5-Memento-Pattern)
 6. [Observer](#B6-Observer-Pattern)
 7. [State](#B7-State-Pattern)
+8. [Strategy](#B8-Strategy-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -203,6 +204,12 @@ public static void main(String[] args) {
 - Usually there's interface for the state and then concrete implementations for each different states.
 - The state pattern is a way to avoid huge if-else blocks or switch statements.
 
+### B8. Strategy Pattern
+- Defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime.
+- Strategy lets the algorithm vary independently of clients that use it.
+- Design principles -> Encapsulate what varies.
+- How to separate out an object’s behaviour(algorithm) in a flexible and extensible way.
+- 
 ---
 
 ### S0. Structural Design Pattern
