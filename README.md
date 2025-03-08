@@ -16,6 +16,7 @@
 4. [Mediator](#B4-Mediator-Pattern)
 5. [Memento](#B5-Memento-Pattern)
 6. [Observer](#B6-Observer-Pattern)
+7. [State](#B7-State-Pattern)
 
 ## Structural
 0. [Definition](#S0-Structural-Design-Pattern)
@@ -195,6 +196,13 @@ public static void main(String[] args) {
     //...
 }
 ```
+
+### B7. State Pattern
+- State pattern allows object to change its runtime behavior when its internal state changes.
+- The state is separated out as a separate objects from the clients.
+- Usually there's interface for the state and then concrete implementations for each different states.
+- The state pattern is a way to avoid huge if-else blocks or switch statements.
+
 ---
 
 ### S0. Structural Design Pattern
