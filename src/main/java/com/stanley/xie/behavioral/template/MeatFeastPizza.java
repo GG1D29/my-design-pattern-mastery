@@ -1,16 +1,13 @@
 package com.stanley.xie.behavioral.template;
 
-public class MeatFeastPizza {
+public class MeatFeastPizza extends Pizza {
 
-    public void makeBase() {
-        System.out.println("Mix flour, yeast and salt.");
-        System.out.println("Roll out the dough.");
-    }
-
+    @Override
     public void addToppings() {
-        System.out.println("Add pepperoni, ham and chicken" );
+        System.out.println("Add pepperoni, ham and chicken");
     }
 
+    @Override
     public void cook() {
         System.out.println("Cook in the oven for 20 minutes");
     }
