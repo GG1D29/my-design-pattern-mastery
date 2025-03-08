@@ -209,7 +209,10 @@ public static void main(String[] args) {
 - Strategy lets the algorithm vary independently of clients that use it.
 - Design principles -> Encapsulate what varies.
 - How to separate out an object’s behaviour(algorithm) in a flexible and extensible way.
-- 
+- Another design principle: Favor composition over inheritance. (if you have a choice)
+- Composition: When you put two classes together with composition, an object can delegate the behavior to the composed object.
+- Composition results in a more flexible design. 
+
 ---
 
 ### S0. Structural Design Pattern
