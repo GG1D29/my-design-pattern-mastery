@@ -1,20 +1,14 @@
 package com.stanley.xie.behavioral.state;
 
 public class MediaPlayer {
-    private boolean isPlaying;
+    private MediaPlayerState state;
 
     public MediaPlayer() {
-        this.isPlaying = false;
+        this.state = new PausedState();
     }
 
     public void pressButton() {
-        if (this.isPlaying) {
-            pause();
-            this.isPlaying = false;
-        } else {
-            play();
-            this.isPlaying = true;
-        }
+        state.pressButton(this);
     }
 
     public void play() {
@@ -27,4 +21,7 @@ public class MediaPlayer {
         System.out.println("Displaying play icon");
     }
 
+    public void setState(MediaPlayerState state) {
+        this.state = state;
+    }
 }
